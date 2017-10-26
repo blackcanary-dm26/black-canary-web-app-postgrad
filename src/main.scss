@@ -1,0 +1,33 @@
+//==== IMPORT RESET ====//
+@import './sass/reset';
+
+//==== IMPORT MIXINS ====//
+@import './sass/mixins';
+
+//==== IMPORT VARIABLES ====//
+@import './sass/variables';
+
+@import "./components/Contacts/Contacts";
+@import './components/Groups/Groups';
+@import './components/Home/Home';
+@import './components/Login/Login';
+@import './components/MapContainer/MapContainer';
+@import './components/LevelOne/LevelOne';
+@import './components/LevelThree/LevelThree';
+@import './components/LevelTwo/LevelTwo';
+@import './components/Profile/Profile';
+@import './components/Situations/Situations';
+@import './components/Menu/Menu';
+@import './components/About/About';
+@import './components/FriendModal/FriendModal';
+@import './sass/App';
+@import './components/Alert/Alert';
+@import './components/Alert/AlertBubble';
+@import './components/AlertPage/AlertPage';
+@import './components/Groups/GroupsModal';
+@import './components/FriendSearchModal/FriendSearchModal';
+
+
+body {
+  background-color: $black;
+}

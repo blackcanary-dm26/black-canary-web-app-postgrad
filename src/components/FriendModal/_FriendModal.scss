@@ -1,0 +1,143 @@
+.FriendModal{
+        letter-spacing: 1;
+        text-transform: uppercase;
+        width: 320px;
+        height: 100vh;
+        position: absolute;
+        z-index: 3;
+        background-color: $black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .heaad{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+
+            .info{
+                color: $yellow;
+                font-size: 1.4em;
+                align-self: center;
+                font-family: $sans;
+                margin-top: -50px;
+            }
+        }
+            .x{
+                width: .8em;
+                height: .8em;
+                margin: 20px;
+                position: relative;
+                cursor: pointer;
+            }
+        
+        .box{
+            width: 300px;
+            height: 500px;
+            background-color: $grey;
+            z-index: 3;
+            border-radius: 10px;
+            
+        }
+
+        .information{
+            width: 260px;
+            // border: 1px solid red;
+            overflow-x: scroll;
+            div {
+                min-width: 330px;
+                line-height: 1.7em;
+            }
+            height: 90px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin-left: 20px;
+            margin-top: 10px;
+            color: white;
+            font-family: $sans;
+            letter-spacing: .09em;
+        }
+
+        .groups{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            position: relative;
+            margin-top: 25px;
+            width: 100%;
+            height: 70%;
+
+            .groupNames{
+                color: white;
+            }
+
+            .added{
+                color: $yellow;
+                font-family: $sans;
+                letter-spacing: .2em;
+                font-size: .7em;
+                margin-bottom: 10px;
+            }
+
+            .groupsbox{
+                width: 90%;
+                height: 150px;
+                overflow: scroll;
+                text-align: center;
+                padding: 5px;
+                // margin-top: 10px;
+                background-color: $black;
+                border-radius: 10px;
+                border-color: $yellow;
+                border: 2px; 
+                color: white;
+
+                button {
+                    background-color: $white-translucent;
+                    border: none;
+                    height: 30px;
+                    padding: 7px;
+                    margin: 5px 2px;
+                    border-radius: 10px;
+                    color: $white;
+                    letter-spacing: 0.2em;
+                    font: {
+                        family: $sans;
+                        size: 1rem;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                    &:hover {
+                        background-color: $yellow;
+                        color: $black
+                    }
+                }
+            }
+        }
+        .buttnWrapper {
+            button {
+            background-color: $white-translucent;
+            color: $yellow;
+            font: {
+                size: 1.2rem;
+                family: $sans;
+            }
+            border-radius: 10px;
+            border: none;
+            padding: 5px 10px;
+            &:hover {
+                color: $black;
+                background-color: $yellow;
+            }
+            &:focus {
+                outline: none;
+            }
+            margin-top: 10px;
+            }
+        }
+    }

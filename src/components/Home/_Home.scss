@@ -1,0 +1,28 @@
+@import './../../sass/variables';
+
+#Home{
+    background-color: $black;
+    height: 100vh;
+    width: 100vw;
+
+    padding-top: 50px;
+
+    .navContainer{
+        width: 100vw;
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+
+        a {
+            color: $white;
+            text-decoration: none;
+            letter-spacing: 0.2em;
+            font-family: $sans;
+            &:hover {
+                color: $yellow;
+            }
+        }
+    }
+}

@@ -1,0 +1,116 @@
+@import './../../sass/variables';
+
+#login {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+    // border: 1px solid red;
+    background-color: $black;
+    z-index: 50;
+    color: $white;
+    font: {
+        family: $sans;
+        // size: 120px;
+    }
+
+    .loginWrapper {
+        width: 100vw;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+
+        .imgWrapper {
+            width: 100vw;
+            // position: relative;
+            display: flex;
+            justify-content: center;
+            height: 320px;
+        }
+
+        .innerWrapper {
+            width: 320px;
+            position: relative;
+            height: 320px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            #spotlight1 {
+                background-color: $white-translucent;
+                height: 320px;
+                width: 320px;
+                border-radius: 50%;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            #spotlight2 {
+                background-color: $yellow-translucent;
+                height: 320px;
+                width: 320px;
+                border-radius: 50%;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .imgWrapper,
+        .infoWrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .infoWrapper {
+            width: 250px;
+            flex-wrap: wrap;
+            // border: 1px solid red;
+
+            button {
+                width: 250px;
+                background-color: $white-translucent;
+                border: none;
+                height: 30px;
+                padding: 7px;
+                margin-top: 80px;
+                border-radius: 10px;
+                color: $yellow;
+                letter-spacing: 0.2em;
+                font: {
+                    family: $sans;
+                    size: 90%;
+                }
+                &:focus {
+                    outline: none;
+                }
+                &:hover {
+                    background-color: $yellow;
+                    color: $black
+                }
+                z-index: 55;
+            }
+        }
+    }
+
+    img {
+        width: 300px;
+        z-index: 99;
+    }
+
+    a {
+        color: $white;
+        &:hover {
+            color: $yellow;
+        }
+    }
+}
